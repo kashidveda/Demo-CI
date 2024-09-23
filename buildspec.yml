@@ -18,7 +18,7 @@ phases:
       - echo "Running tests..."
       - echo "Building Docker image..."
       - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/Demo-CI:latest" 
-      - docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/Demo-CI:latest"
+      - docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/kashidveda/Demo-CI:latest"
   post_build:
     commands:
       - echo "Build completed successfully!"
